@@ -1,2 +1,2 @@
 psvm -> Sirve como atajo para crear "public static void main"
-sout -> Sirve para "println"
+sout -> Sirve para "println".
