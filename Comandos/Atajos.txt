@@ -1,2 +1,34 @@
-psvm -> Sirve como atajo para crear "public static void main"
-sout -> Sirve para "println".
+1. Atajos de impresión
+
+	-sout → System.out.println();
+	-soutv → imprime el valor de una variable → System.out.println("var = " + var);
+	-soutp → imprime parámetros de un método → System.out.println("param = " + param);
+	-soutm → imprime el nombre del método actual.
+	-serr → imprime en consola de error → System.err.println();
+	-souta → imprime un arreglo completo usando Arrays.toString().
+
+2. Atajos de bucles
+
+	-fori → for (int i = 0; i < ; i++)
+	-itar → bucle para recorrer un arreglo.
+	-iter → bucle for-each para recorrer colecciones.
+
+3. Atajos de control
+
+	-ifn → if (variable == null) { }
+	-inn → if (variable != null) { }
+	-try → bloque try/catch.
+	-tryf → bloque try/finally.
+
+4. Atajos de constantes y métodos
+
+	-psvm → genera el método principal public static void main()
+	-psvma → genera el método public static void main(String[] args) pero incluye el parámetro args automáticamente.
+	-psfs → public static final String (constante de texto).
+	-psfi → public static final int (constante numérica).
+	-main → en algunos IDEs, también genera el main.
+
+5. Atajos de comentarios
+
+	-todo → comentario // TODO: para tareas pendientes.
+	-fixme → comentario // FIXME: para marcar errores a corregir.

@@ -1,0 +1,112 @@
+1. Conceptos básicos
+
+	-Java → Lenguaje de programación orientado a objetos, multiplataforma, robusto y seguro, creado por Sun Microsystems y ahora mantenido por Oracle.
+	-JVM (Java Virtual Machine) → Máquina virtual que ejecuta el bytecode y permite que Java sea multiplataforma.
+	-JDK (Java Development Kit) → Kit de desarrollo que incluye compilador, bibliotecas y la JVM.
+	-JRE (Java Runtime Environment) → Entorno para ejecutar programas Java; no contiene compilador.
+	-Bytecode → Código intermedio generado al compilar, ejecutado por la JVM.
+	-Garbage Collector (GC) → Proceso automático de la JVM que libera memoria eliminando objetos no utilizados.
+
+2. Estructura del lenguaje
+
+	-Clase → Plantilla que define atributos y métodos.
+	-Objeto → Instancia de una clase.
+	-Método → Conjunto de instrucciones que realiza una acción.
+	-Atributo → Variable dentro de una clase.
+	-Constructor → Método especial que se ejecuta al crear un objeto.
+	-Paquete (package) → Agrupación de clases relacionadas.
+	-Import → Permite usar clases de otros paquetes.
+
+3. Modificadores de acceso
+
+	-public → Accesible desde cualquier parte.
+	-private → Accesible solo dentro de la misma clase.
+	-protected → Accesible dentro de la clase, sus subclases y el mismo paquete.
+	-default (package-private) → Accesible solo dentro del mismo paquete.
+
+4. Modificadores clave
+
+	-final:
+		En una variable → Su valor no puede cambiar (constante).
+		En un método → No puede ser sobrescrito por una subclase.
+		En una clase → No puede heredarse.
+	-static → Miembro de clase compartido por todas las instancias (no depende de un objeto).
+	-this → Referencia al objeto actual.
+	-super → Referencia a la clase padre; se usa para acceder a métodos/constructores de la superclase.
+	-abstract → Define clases o métodos que deben implementarse en subclases.
+	-synchronized → Controla el acceso a métodos/variables en entornos multihilo.
+	-volatile → Indica que una variable puede ser modificada por varios hilos simultáneamente.
+	-transient → Excluye un atributo de la serialización.
+
+5. Tipos de datos
+
+	-Primitivos → int, double, float, char, boolean, byte, short, long.
+	-Referenciados → Objetos, String, arreglos, colecciones.
+	-Wrapper classes → Clases que envuelven tipos primitivos (Integer, Double, Boolean, etc.).
+
+6. Control de flujo
+
+	-if / else → Condiciones.
+	-switch → Selección múltiple.
+	-for, while, do-while → Bucles de repetición.
+	-break → Sale de un bucle.
+	-continue → Salta a la siguiente iteración del bucle.
+	-return → Finaliza un método y devuelve un valor (si aplica).
+
+7. Principios de POO en Java
+
+	-Abstracción → Definir lo esencial ocultando los detalles.
+	-Encapsulación → Restringir acceso a atributos y métodos (usando private + getters/setters).
+	-Herencia → Una clase puede heredar atributos y métodos de otra.
+	-Polimorfismo → Permite que un método tenga diferentes comportamientos según el objeto.
+
+8. Interfaces y clases especiales
+
+	-Interface → Contrato que define métodos abstractos que una clase debe implementar.
+	-Abstract class → Clase que no puede instanciarse directamente, puede tener métodos abstractos y concretos.
+	-Enum → Tipo especial para definir conjuntos de constantes.
+	-Record (Java 14+) → Clase inmutable y compacta para representar datos.
+
+9. Manejo de errores
+
+	-Exception → Error controlado en tiempo de ejecución (NullPointerException, IOException, etc.).
+	-Error → Fallos graves no recuperables (OutOfMemoryError).
+	-Checked Exception → Deben manejarse obligatoriamente con try/catch o throws.
+	-Unchecked Exception → Errores de programación que no requieren manejo explícito.
+	-try-catch-finally → Bloques para manejar excepciones.
+	-throw → Lanza una excepción.
+	-throws → Declara que un método puede lanzar excepciones.
+
+10. Colecciones y utilidades
+
+	-Array → Estructura fija para almacenar elementos del mismo tipo.
+	-ArrayList → Lista dinámica que permite redimensionamiento.
+	-HashMap → Estructura clave-valor.
+	-HashSet → Conjunto que no admite duplicados.
+	-Iterator → Objeto para recorrer colecciones.
+
+11. Hilos y concurrencia
+
+	-Thread → Clase que representa un hilo de ejecución.
+	-Runnable → Interfaz funcional para ejecutar código en un hilo.
+	-ExecutorService → API para gestionar hilos de forma avanzada.
+	-sleep() → Suspende un hilo temporalmente.
+	-join() → Espera a que un hilo termine antes de continuar.
+
+12. Entrada/Salida (I/O)
+
+	-Scanner → Clase para leer datos desde teclado u otras fuentes.
+	-System.out → Flujo de salida estándar (consola).
+	-System.in → Flujo de entrada estándar (teclado).
+	-File → Representa archivos y directorios.
+	-BufferedReader / BufferedWriter → Lectura y escritura eficiente de texto.
+	-Serialization → Guardar un objeto en archivo o memoria.
+
+13. Palabras clave importantes
+
+	-null → Representa ausencia de valor en una referencia.
+	-new → Crea un nuevo objeto en memoria.
+	-package → Define un paquete.
+	-import → Permite usar clases de otros paquetes.
+	-instanceof → Verifica si un objeto es instancia de una clase.
+	-default → Usado en switch y en métodos de interfaces.
