@@ -32,3 +32,6 @@
 
 	-todo → comentario // TODO: para tareas pendientes.
 	-fixme → comentario // FIXME: para marcar errores a corregir.
+
+6. Otros atajos
+	-Getter y Setter -> Atajo Alt+Insert
