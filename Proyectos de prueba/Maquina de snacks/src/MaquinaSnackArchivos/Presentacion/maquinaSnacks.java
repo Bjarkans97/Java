@@ -75,8 +75,14 @@ public class maquinaSnacks {
     }
 
     private static void mostrarTicket(List<SnackEN> producto) {
+        var total = 0;
         System.out.println("\n** Lista de productos a comprar **");
-        producto.forEach(System.out::println);
+        for (SnackEN snac : producto){
+            System.out.println("\t"+snac.getNombre()+" $"+ snac.getPrecio());
+            total += snac.getPrecio();
+        }
+        System.out.println("\n\tTotal: $"+total);
+
     }
 
     private static void comprarSnack(Scanner cons, List<SnackEN> producto, IServicioSnacks servicioSnacks) {
