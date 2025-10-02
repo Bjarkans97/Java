@@ -1,4 +1,4 @@
-package zona_fit.conexion;
+package Conexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -17,6 +17,10 @@ public class Cliente {
         Membresia = membresia;
     }
 
+    public Cliente(int id) {
+        Id = id;
+    }
+
     public Cliente(int id, String nombre, String apellido, int membresia) {
         this(nombre, apellido, membresia);
         Id = id;
